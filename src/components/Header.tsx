@@ -33,7 +33,7 @@ const Header = () => {
               So, '/public/img/socanalystpro_logo.webp' becomes '/img/socanalystpro_logo.webp'.
             */}
             <img
-              src="/public/img/socanalystpro_logo.webp"
+              src="/img/socanalystpro_logo.webp"
               alt="SOC Analyst Pro Logo"
               className="h-8 w-auto" // Using h-8 and w-auto to maintain aspect ratio
               onError={(ev) => {
