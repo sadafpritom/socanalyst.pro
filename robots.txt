@@ -1,0 +1,6 @@
+# Allow all search engines
+User-agent: *
+Allow: /
+
+# Point them to your sitemap
+Sitemap: https://www.socanalyst.pro/sitemap.xml
