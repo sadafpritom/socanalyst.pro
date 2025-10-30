@@ -218,7 +218,7 @@ ICONS -
           </motion.div>
         </div>
       </section>
-Glow effect and background animations   </div>
+</div>
   );
 };
 
