@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+  *** FIX #4: This is the fix for the mobile left-right scrolling. ***
+  This tells the browser to "clip" any content that tries to
+  go outside the screen's horizontal boundaries.
+*/
+html,
+body {
+  overflow-x: hidden;
+  box-sizing: border-box; /* Ensures padding doesn't add to width */
+}
+
 @layer utilities {
   .glass {
     background: rgba(17, 25, 40, 0.5);
@@ -36,3 +47,4 @@
     box-shadow: 0 8px 32px 0 rgba(0, 212, 255, 0.1);
   }
 }
+
