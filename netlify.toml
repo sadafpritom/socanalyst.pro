@@ -1,0 +1,12 @@
+# This tells Netlify how to build your site
+[build]
+  command = "npm run build" # Or "vite build", whatever is in your package.json
+  publish = "dist"          # This matches your screenshot's 'dist' folder
+
+# This is the rule that fixes all 404 errors for a React app.
+# It tells Netlify: "For any page request, just send the index.html file
+# and let React Router handle it."
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
